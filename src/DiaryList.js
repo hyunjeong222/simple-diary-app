@@ -1,5 +1,7 @@
 import DiaryItem from "./DiaryItem";
 
+// react는 단방향으로 데이터가 흐름
+
 const DiaryList = ( {diaryList} )=>{
     return (
         <div className="DiaryList">
