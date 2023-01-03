@@ -4,6 +4,7 @@ import DiaryEditor from "./DiaryEditor";
 import DiaryList from './DiaryList';
 
 // https://jsonplaceholder.typicode.com/comments
+// https://ko.reactjs.org/docs/getting-started.html
 
 function App() {
   const [data, setData] = useState([]);
@@ -43,7 +44,6 @@ function App() {
   };
 
   const onRemove = (targetId) => {
-    console.log(`${targetId}가 삭제되었습니다.`);
     const newDiaryList = data.filter((it) => it.id !== targetId);
     setData(newDiaryList);
   };
@@ -58,14 +58,11 @@ function App() {
 
   const getDiaryAnalysis = useMemo(
     ()=> {
-    console.log("일기 분석 시작");
-
     const goodCount = data.filter((it)=>it.emotion >= 3).length;
     const badCount = data.length - goodCount;
     const goodRatio = (goodCount / data.length) * 100;
     return {goodCount, badCount, goodRatio};
-  }, [data.length]
-  );
+  }, [data.length]);
 
   const {goodCount, badCount, goodRatio} = getDiaryAnalysis;
 
