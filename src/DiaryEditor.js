@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { DiaryDispatchContext } from "./App";
 
-const DiaryEditor = ()=>{
+const DiaryEditor = ()=> {
     const {onCreate} = useContext(DiaryDispatchContext)
     const authorInput = useRef();
     const contentInput = useRef();
@@ -11,13 +11,15 @@ const DiaryEditor = ()=>{
         content: "",
         emotion: 1,
     });
-    const handleChangeState = (e)=>{
+
+    const handleChangeState = (e)=> {
         setState({
             ...state,
             [e.target.name] : e.target.value,
         });
     };
-    const handleSubmit = ()=>{
+
+    const handleSubmit = ()=> {
         if (state.author.length < 1) {
             // focus
             authorInput.current.focus();
@@ -60,12 +62,13 @@ const DiaryEditor = ()=>{
             <select 
                 name="emotion" 
                 value={state.emotion} 
-                onChange={handleChangeState}>
-                    <option value={1}>1</option>
-                    <option value={2}>2</option>
-                    <option value={3}>3</option>
-                    <option value={4}>4</option>
-                    <option value={5}>5</option>
+                onChange={handleChangeState}
+            >
+                <option value={1}>1</option>
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+                <option value={4}>4</option>
+                <option value={5}>5</option>
             </select>
         </div>
         <div>
@@ -73,4 +76,5 @@ const DiaryEditor = ()=>{
         </div>
     </div>
 }
+
 export default React.memo(DiaryEditor);
