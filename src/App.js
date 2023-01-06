@@ -7,7 +7,8 @@ import DiaryList from './DiaryList';
 // https://jsonplaceholder.typicode.com/comments
 // https://ko.reactjs.org/docs/getting-started.html
 
-const reducer = (state, action)=> { //상태변화가 일어나기 직전 state, 어떤 상태변화를 일으켜야하는지에 대한 정보들을 담은 action
+const reducer = (state, action)=> { 
+  //상태변화가 일어나기 직전 state, 어떤 상태변화를 일으켜야하는지에 대한 정보들을 담은 action
   switch(action.type) {
     case 'INIT' : {
       return action.data
