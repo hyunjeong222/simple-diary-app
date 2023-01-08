@@ -3,6 +3,7 @@ import './App.css';
 import DiaryEditor from "./DiaryEditor";
 import DiaryList from './DiaryList';
 
+// 실제로 사용자에게 보여줄 화면 정의
 // https://jsonplaceholder.typicode.com/comments
 // https://ko.reactjs.org/docs/getting-started.html
 

@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { DiaryStateContext } from "./App";
 import DiaryItem from "./DiaryItem";
 
+// 일기 리스트를 렌더링 할 컴포넌트
+
 // react는 단방향으로 데이터가 흐름
 // 데이터는 위에서 아래로, 이벤트는 아래에서 위로
 

@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { DiaryDispatchContext } from "./App";
 
+// 배열 데이터를 사용해서 렌더링 할 컴포넌트
+
 const DiaryItem = ({ 
     id, 
     author, 

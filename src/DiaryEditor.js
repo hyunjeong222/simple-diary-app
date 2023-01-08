@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { DiaryDispatchContext } from "./App";
 
+// 작성자, 일기 본문, 감정 점수를 렌더링 할 컴포넌트
+
 const DiaryEditor = ()=> {
     const {onCreate} = useContext(DiaryDispatchContext)
     const authorInput = useRef();
