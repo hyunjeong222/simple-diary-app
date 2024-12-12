@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[Click to check the project screen](https://hyunjeong222.github.io/simple-diary-app/) 
+
 ## Available Scripts
 
 In the project directory, you can run:
