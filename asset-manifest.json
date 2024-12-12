@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/simple-diary-app/static/css/main.29dddf86.css",
+    "main.js": "/simple-diary-app/static/js/main.710f0af6.js",
+    "index.html": "/simple-diary-app/index.html",
+    "main.29dddf86.css.map": "/simple-diary-app/static/css/main.29dddf86.css.map",
+    "main.710f0af6.js.map": "/simple-diary-app/static/js/main.710f0af6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29dddf86.css",
+    "static/js/main.710f0af6.js"
+  ]
+}
